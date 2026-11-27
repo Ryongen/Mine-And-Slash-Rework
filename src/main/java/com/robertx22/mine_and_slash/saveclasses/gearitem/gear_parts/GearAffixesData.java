@@ -26,6 +26,13 @@ public class GearAffixesData implements IGearPartTooltip {
 
     public List<AffixData> cor = new ArrayList<>();
 
+    // Void modifiers (addons/void_crafting). Kept apart from prefixes/suffixes so they don't use up
+    // the slots a rarity fills, and rerolls/upgrades that only look at pre/suf leave them alone.
+    public List<AffixData> vo = new ArrayList<>();
+
+    // a Void modifier that hasn't been chosen yet, null when there is none
+    public VoidSeal seal = null;
+
     public boolean isCorrupted() {
         return !cor.isEmpty();
     }
@@ -173,6 +180,9 @@ public class GearAffixesData implements IGearPartTooltip {
         list.addAll(pre);
         list.addAll(suf);
         list.addAll(cor);
+        if (vo != null) {
+            list.addAll(vo);
+        }
 
         return list;
     }

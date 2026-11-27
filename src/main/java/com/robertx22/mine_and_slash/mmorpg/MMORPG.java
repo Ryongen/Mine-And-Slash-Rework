@@ -238,6 +238,7 @@ public class MMORPG {
         DungeonAddonEvents.init();
         ObeliskAddonEvents.init();
         HarvestAddonEvents.init();
+        com.robertx22.addons.void_crafting.VoidCraftingEvents.init();
 
         watch.print("Mine and slash mod initialization ");
 

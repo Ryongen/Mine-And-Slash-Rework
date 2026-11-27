@@ -55,6 +55,7 @@ public class C2SPacketRegister {
         Packets.registerClientToServerPacket(MMORPG.NETWORK, new MercenaryActionPacket(), i++);
         Packets.registerClientToServerPacket(MMORPG.NETWORK, new CraftUniquePacket(), i++);
         Packets.registerClientToServerPacket(MMORPG.NETWORK, new MapDeviceActionPacket(), i++);
+        Packets.registerClientToServerPacket(MMORPG.NETWORK, new com.robertx22.addons.void_crafting.packets.VoidUnsealPacket(), i++);
 
 
         // Packets.registerClientToServerPacket(MMORPG.NETWORK, new SetupHotbarPacket(), i++);

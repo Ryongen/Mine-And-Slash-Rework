@@ -265,6 +265,8 @@ public class GearTooltipUtils {
                             });
 
                         }
+                        // void modifiers and a sealed one (addons/void_crafting). the merged view already summed the stats
+                        list.addAll(com.robertx22.addons.void_crafting.VoidTooltips.gearLines(gearItemData, !showMerge));
                         //handle sockets and enchantment
                         IgnoreNullList<IGearPartTooltip> list3 = IgnoreNullList.of(gearSocketsData, gearEnchantData);
                         ListIterator<IGearPartTooltip> iGearPartTooltipListIterator = list3.listIterator();

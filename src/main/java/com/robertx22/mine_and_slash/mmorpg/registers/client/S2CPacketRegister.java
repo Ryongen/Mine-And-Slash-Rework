@@ -40,6 +40,7 @@ public class S2CPacketRegister {
         Packets.registerServerToClient(MMORPG.NETWORK, new SetBackpackSlotPacket(), i++);
         Packets.registerServerToClient(MMORPG.NETWORK, new SyncUniqueCollectionPacket(), i++);
         Packets.registerServerToClient(MMORPG.NETWORK, new MapDeviceSyncPacket(), i++);
+        Packets.registerServerToClient(MMORPG.NETWORK, new com.robertx22.addons.void_crafting.packets.VoidWhisperPacket(), i++);
 
 
     }

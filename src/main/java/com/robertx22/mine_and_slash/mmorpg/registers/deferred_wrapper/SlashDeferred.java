@@ -65,6 +65,7 @@ public class SlashDeferred {
         SlashItems.GearItems.init();
         RuneItems.init();
         GemItems.init();
+        com.robertx22.addons.void_crafting.VoidCraftingItems.init();
 
         ProfessionMatItems.init();
         ProfessionProductItems.init();
